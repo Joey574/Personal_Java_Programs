@@ -14,7 +14,7 @@ public class Tester {
         //System.out.println("Name: " + listOfFiles[valToTest].getName());
 
         //Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[valToTest].getName());
-        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/bunnies.rle");
+        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/orion.rle");
 
         String fileName = pattern.getName();
         fileName = fileName.replace("/", "");
