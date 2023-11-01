@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="fixed bug, check for len == -1">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="fixed another bug, mathf.max">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
     </list>
@@ -130,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698870331645</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed another bug, mathf.max">
+      <option name="closed" value="true" />
+      <created>1698870856986</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698870856986</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,7 +149,8 @@
     <MESSAGE value="fixed performance, string += was causing having, remember to use string builder" />
     <MESSAGE value="fixed performance, string += was causing havoc, remember to use string builder" />
     <MESSAGE value="fixed bug, check for len == -1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug, check for len == -1" />
+    <MESSAGE value="fixed another bug, mathf.max" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed another bug, mathf.max" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,7 +17,7 @@ public class Pattern {
             "void CSMain(uint3 id : SV_DispatchThreadID)\n" +
             "{\n";
 
-    private String resultTemplate = "Result[int2(xPos$, yPos#)] = color;";
+    private String resultTemplate = "\tResult[int2(xPos$, yPos#)] = color;";
 
     private String name;
     private String patternString;
@@ -46,10 +46,11 @@ public class Pattern {
         String out = "";
         StringBuilder finalOut = new StringBuilder();
 
-        for (int i = 0; i < patternString.length() - 1; i++) {
+        for (int i = 0; i < patternString.length(); i++) {
             if (patternString.charAt(i) == '$') {
-                y++;
+                y += Math.max(len, 1);
                 x = 0;
+                len = -1;
             } else if (patternString.charAt(i) >= '0' && patternString.charAt(i) <= '9') {
                 if (len == -1) {
                     len = patternString.charAt(i) - '0';
@@ -61,17 +62,15 @@ public class Pattern {
                 len = -1;
             } else if (patternString.charAt(i) == 'o') {
 
-                if (len == -1) {
-                    len = 1;
-                }
+                len = Math.max(len, 1);
 
                 for (int q = 0; q < len; q++) {
                     StringBuilder xAdjust = new StringBuilder();
                     StringBuilder yAdjust = new StringBuilder();
                     out = resultTemplate;
 
-                    if (x > 0) {
-                        xAdjust.append(" + ").append(x);
+                    if (x + q > 0) {
+                        xAdjust.append(" + ").append(x + q);
                     }
                     if (y > 0) {
                         yAdjust.append(" - ").append(y);
@@ -84,6 +83,8 @@ public class Pattern {
                 }
                 x += len;
                 len = -1;
+            } else if (patternString.charAt(i) == '!') {
+                break;
             }
         }
         return fileTemplate + finalOut + "}";
