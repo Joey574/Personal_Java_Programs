@@ -57,7 +57,7 @@ public class Pattern {
                     len = (len * 10) + (patternString.charAt(i) - '0');
                 }
             } else if (patternString.charAt(i) == 'b') {
-                x += len;
+                x += Math.max(len, 1);
                 len = -1;
             } else if (patternString.charAt(i) == 'o') {
 
