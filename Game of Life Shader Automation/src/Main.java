@@ -16,28 +16,25 @@ public class Main {
             try {
                 FileRead fileRead = new FileRead();
 
-                for (int i = 0; i > -1; i++) {
+                for (int i = 0; i < listOfFiles.length; i++) {
                     int index = currentTarget.getAndIncrement();
-
                     try {
-                        if (listOfFiles[index].getName().endsWith(".rle")) {
-                            Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[index].getName());
+                        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[index].getName());
 
-                            String fileName = pattern.getName();
-                            fileName = fileName.replace("/", "");
-                            fileName = fileName.replace(".rle", "");
+                        String fileName = pattern.getName();
+                        fileName = fileName.replace("/", "");
+                        fileName = fileName.replace(".rle", "");
 
-                            File myObj = new File("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
+                        File myObj = new File("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
-                            FileWriter myWriter = null;
-                            myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
+                        FileWriter myWriter = null;
+                        myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
-                            myWriter.write(fileRead.getFileString());
-                            myWriter.close();
+                        myWriter.write(pattern.initializePattern());
+                        myWriter.close();
 
-                            numFiles.incrementAndGet();
-                            System.out.println("Total files created: " + numFiles);
-                        }
+                        numFiles.incrementAndGet();
+                        System.out.println("Total files created: " + numFiles);
                     } catch (Exception e) {
                         break;
                     }
@@ -67,6 +64,5 @@ public class Main {
         for (int i = 0; i < MAX_THREADS; i++) {
             threads.get(i).join();
         }
-
     }
 }

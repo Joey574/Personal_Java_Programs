@@ -9,9 +9,13 @@ public class Tester {
         File folder = new File("Game of Life Shader Automation/all");
         File[] listOfFiles = folder.listFiles();
 
-        System.out.println(listOfFiles[2902].getName());
+        int valToTest = 2365;
 
-        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[2902].getName());
+        System.out.println("Name: " + listOfFiles[valToTest].getName());
+
+        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[valToTest].getName());
+
+        System.out.println("Pattern String: " + pattern.getPatternString());
 
         String fileName = pattern.getName();
         fileName = fileName.replace("/", "");
@@ -24,7 +28,7 @@ public class Tester {
         FileWriter myWriter = null;
         myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
-        myWriter.write(fileRead.getFileString());
+        myWriter.write(pattern.initializePattern());
         myWriter.close();
     }
 }

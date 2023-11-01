@@ -1,47 +1,31 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class FileRead {
 
     private Pattern out;
 
-    private String fileTemplate = "#pragma kernel CSMain\n" +
-            "\n" +
-            "RWTexture2D<float4> Result;\n" +
-            "\n" +
-            "float xPos;\n" +
-            "float yPos;\n" +
-            "\n" +
-            "float4 color;\n\n" +
-            "[numthreads(1, 1, 1)]\n" +
-            "void CSMain(uint3 id : SV_DispatchThreadID)\n" +
-            "{\n";
-
-    private String resultTemplate = "Result[int2(xPos$, yPos#)] = color;";
-
-    public Pattern readFile(String fileName) throws FileNotFoundException {
+    public Pattern readFile(String fileName) throws IOException {
         FileReader fr = new FileReader(fileName);
         Scanner sc = new Scanner(fr);
 
-        String pattern = "";
+        StringBuilder pattern = new StringBuilder();
 
         while (sc.hasNext()) {
             String temp = sc.nextLine();
             if (temp.startsWith("#N")) {
                 out = new Pattern(temp.substring(3));
             } else if (!temp.startsWith("#") && !temp.startsWith("x")) {
-                pattern += temp;
+                pattern.append(temp);
             }
         }
-        out.setPatternString(pattern);
 
+        fr.close();
+        sc.close();
+
+        out.setPatternString(pattern.toString());
         return out;
-    }
-
-    public String getFileString() {
-        String finalString = "";
-        return fileTemplate + out.initializePattern() + "}";
-
     }
 }
