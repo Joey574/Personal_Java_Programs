@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -8,7 +9,7 @@ public class Main {
     static AtomicInteger numFiles = new AtomicInteger();
     static File folder = new File("Game of Life Shader Automation/all");
     static File[] listOfFiles;
-    static int MAX_THREADS = 16;
+    static int MAX_THREADS = 12;
 
     public static class FileThread extends Thread {
         public void run() {
@@ -34,8 +35,8 @@ public class Main {
                             myWriter.write(fileRead.getFileString());
                             myWriter.close();
 
-                            System.out.println("Index: " + currentTarget + " File Created");
                             numFiles.incrementAndGet();
+                            System.out.println("Total files created: " + numFiles);
                         }
                     } catch (Exception e) {
                         break;
@@ -48,19 +49,24 @@ public class Main {
         }
     }
 
-
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         numFiles.set(0);
         currentTarget.set(0);
 
         listOfFiles = folder.listFiles();
 
+        ArrayList<Thread> threads = new ArrayList<>();
+
         for (int i = 0; i < MAX_THREADS; i++) {
             FileThread t = new FileThread();
             t.start();
+
+            threads.add(t);
         }
 
-        System.out.println("Num Files: " + numFiles);
+        for (int i = 0; i < MAX_THREADS; i++) {
+            threads.get(i).join();
+        }
+
     }
 }

@@ -24,45 +24,24 @@ public class FileRead {
         FileReader fr = new FileReader(fileName);
         Scanner sc = new Scanner(fr);
 
+        String pattern = "";
+
         while (sc.hasNext()) {
             String temp = sc.nextLine();
             if (temp.startsWith("#N")) {
                 out = new Pattern(temp.substring(3));
             } else if (!temp.startsWith("#") && !temp.startsWith("x")) {
-                out.setPatternString(temp);
+                pattern += temp;
             }
         }
-
-        out.initializePattern();
+        out.setPatternString(pattern);
 
         return out;
     }
 
     public String getFileString() {
         String finalString = "";
-
-        for (int i = 0; i < out.getLiveCells().size(); i++) {
-            String temp = resultTemplate;
-            String xAdjust = "";
-            String yAdjust = "";
-
-            Cell cell = out.getLiveCells().get(i);
-
-            if (cell.x > 0) {
-                xAdjust = " + " + cell.x;
-            }
-
-            if (cell.y > 0) {
-                yAdjust = " + " + cell.y;
-            }
-
-            temp = temp.replace("$", xAdjust);
-            temp = temp.replace("#", yAdjust);
-
-            finalString += temp + "\n";
-        }
-
-        return fileTemplate + finalString + "}";
+        return fileTemplate + out.initializePattern() + "}";
 
     }
 }

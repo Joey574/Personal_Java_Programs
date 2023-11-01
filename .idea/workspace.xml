@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="pattern files">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="multi threaded automation cause why not">
+      <change afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/FileRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +103,22 @@
       <option name="project" value="LOCAL" />
       <updated>1698855126850</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="multi threaded automation cause why not">
+      <option name="closed" value="true" />
+      <created>1698859711405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698859711405</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="automated file creation is working, just need to check for naming issues and fix them" />
-    <option name="LAST_COMMIT_MESSAGE" value="automated file creation is working, just need to check for naming issues and fix them" />
+    <MESSAGE value="multi threaded automation cause why not" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi threaded automation cause why not" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

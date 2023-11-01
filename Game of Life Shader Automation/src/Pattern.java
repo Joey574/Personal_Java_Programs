@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
@@ -17,14 +18,6 @@ public class Pattern {
         return name;
     }
 
-    public ArrayList<Cell> getCellStates() {
-        return cellStates;
-    }
-
-    public ArrayList<Cell> getLiveCells() {
-        return liveCells;
-    }
-
     public String getPatternString() {
         return patternString;
     }
@@ -33,7 +26,7 @@ public class Pattern {
         this.patternString = patternString;
     }
 
-    public void initializePattern() {
+    public String initializePattern() {
         int x = 0;
         int y = 0;
         int len = -1;
@@ -65,26 +58,5 @@ public class Pattern {
                 liveCells.add(cellStates.get(i));
             }
         }
-    }
-
-    private int initalizeCreateCell(int x, int y, int len, boolean alive) {
-        ArrayList<Cell> temp = new ArrayList<>();
-        if (len == -1) {
-            len = 1;
-        }
-        temp.addAll(CreateCell(x, y, len, alive));
-        cellStates.addAll(temp);
-        return temp.size();
-    }
-
-    private ArrayList<Cell> CreateCell(int x, int y, int len, boolean alive) {
-        ArrayList<Cell> out = new ArrayList<>();
-
-        for (int i = 0; i < len; i++) {
-            Cell temp = new Cell(x + i, y, alive);
-            out.add(temp);
-        }
-
-        return out;
     }
 }
