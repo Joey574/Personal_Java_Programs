@@ -11,11 +11,10 @@ public class Tester {
 
         int valToTest = 2365;
 
-        System.out.println("Name: " + listOfFiles[valToTest].getName());
+        //System.out.println("Name: " + listOfFiles[valToTest].getName());
 
-        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[valToTest].getName());
-
-        System.out.println("Pattern String: " + pattern.getPatternString());
+        //Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/" + listOfFiles[valToTest].getName());
+        Pattern pattern = fileRead.readFile("Game of Life Shader Automation/all/bunnies.rle");
 
         String fileName = pattern.getName();
         fileName = fileName.replace("/", "");
@@ -28,7 +27,9 @@ public class Tester {
         FileWriter myWriter = null;
         myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
-        myWriter.write(pattern.initializePattern());
-        myWriter.close();
+        System.out.println(pattern.initializePattern());
+
+        //myWriter.write(pattern.initializePattern());
+        //myWriter.close();
     }
 }

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="not working efficiently, gotta debug">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="fixed performance, string += was causing havoc, remember to use string builder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Cell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/FileRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Tester.java" afterDir="false" />
     </list>
@@ -118,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698863296390</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed performance, string += was causing havoc, remember to use string builder">
+      <option name="closed" value="true" />
+      <created>1698869632593</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698869632593</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -126,7 +131,9 @@
     <MESSAGE value="automated file creation is working, just need to check for naming issues and fix them" />
     <MESSAGE value="multi threaded automation cause why not" />
     <MESSAGE value="not working efficiently, gotta debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="not working efficiently, gotta debug" />
+    <MESSAGE value="fixed performance, string += was causing having, remember to use string builder" />
+    <MESSAGE value="fixed performance, string += was causing havoc, remember to use string builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed performance, string += was causing havoc, remember to use string builder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

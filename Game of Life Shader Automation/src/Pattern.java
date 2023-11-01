@@ -43,9 +43,6 @@ public class Pattern {
         int y = 0;
         int len = -1;
 
-        String xAdjust = "";
-        String yAdjust = "";
-
         String out = "";
         StringBuilder finalOut = new StringBuilder();
 
@@ -63,16 +60,21 @@ public class Pattern {
                 x += len;
                 len = -1;
             } else if (patternString.charAt(i) == 'o') {
+
+                if (len == -1) {
+                    len = 1;
+                }
+
                 for (int q = 0; q < len; q++) {
-                    xAdjust = "";
-                    yAdjust = "";
+                    StringBuilder xAdjust = new StringBuilder();
+                    StringBuilder yAdjust = new StringBuilder();
                     out = resultTemplate;
 
                     if (x > 0) {
-                        xAdjust = " + " + x;
+                        xAdjust.append(" + ").append(x);
                     }
                     if (y > 0) {
-                        yAdjust = " - " + y;
+                        yAdjust.append(" - ").append(y);
                     }
 
                     out = out.replace("$", xAdjust);
@@ -80,7 +82,6 @@ public class Pattern {
 
                     finalOut.append(out).append("\n");
                 }
-                //alive = true;
                 x += len;
                 len = -1;
             }
