@@ -88,7 +88,7 @@ public class Pattern {
                         xAdjust.append(" + (").append(x + q).append(" * xMult)");
                     }
                     if (y > 0) {
-                        yAdjust.append(" - (").append(y).append(" * yMult");
+                        yAdjust.append(" - (").append(y).append(" * yMult)");
                     }
 
                     out = out.replace("$", xAdjust);
