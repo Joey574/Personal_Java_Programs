@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="debugging done I think">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="added up/down left/right functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698875452767</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added up/down left/right functionality">
+      <option name="closed" value="true" />
+      <created>1698949242976</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698949242976</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,7 +177,8 @@
     <MESSAGE value="fixed another bug, mathf.max" />
     <MESSAGE value="more debugging needs to be done" />
     <MESSAGE value="debugging done I think" />
-    <option name="LAST_COMMIT_MESSAGE" value="debugging done I think" />
+    <MESSAGE value="added up/down left/right functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added up/down left/right functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

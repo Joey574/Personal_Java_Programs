@@ -38,7 +38,6 @@ public class Main {
                     } catch (Exception e) {
                         break;
                     }
-
                 }
             } catch(Exception e) {
                 throw new RuntimeException(e);

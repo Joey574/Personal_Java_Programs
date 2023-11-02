@@ -32,7 +32,7 @@ public class Pattern {
             "    {\n" +
             "        yMult = -1;\n" +
             "    }\n\n";
-    private String resultTemplate = "\tResult[int2((xPos$) * xMult, (yPos#) * yMult)] = color;";
+    private String resultTemplate = "\tResult[int2(xPos$, yPos#)] = color;";
 
     private String name;
     private String patternString;
@@ -85,10 +85,10 @@ public class Pattern {
                     out = resultTemplate;
 
                     if (x + q > 0) {
-                        xAdjust.append(" + ").append(x + q);
+                        xAdjust.append(" + (").append(x + q).append(" * xMult)");
                     }
                     if (y > 0) {
-                        yAdjust.append(" - ").append(y);
+                        yAdjust.append(" - (").append(y).append(" * yMult");
                     }
 
                     out = out.replace("$", xAdjust);
