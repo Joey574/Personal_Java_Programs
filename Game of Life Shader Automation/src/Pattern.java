@@ -12,12 +12,27 @@ public class Pattern {
             "float xPos;\n" +
             "float yPos;\n" +
             "\n" +
-            "float4 color;\n\n" +
+            "float4 color;\n" +
+            "\n" +
+            "bool lr;\n" +
+            "bool ud;\n" +
+            "\n" +
             "[numthreads(1, 1, 1)]\n" +
             "void CSMain(uint3 id : SV_DispatchThreadID)\n" +
-            "{\n";
-
-    private String resultTemplate = "\tResult[int2(xPos$, yPos#)] = color;";
+            "{\n" +
+            "    float xMult = 1;\n" +
+            "    float yMult = 1;\n" +
+            "\t\n" +
+            "    if (lr)\n" +
+            "    {\n" +
+            "        xMult = -1;\n" +
+            "    }\n" +
+            "\t\n" +
+            "    if (ud)\n" +
+            "    {\n" +
+            "        yMult = -1;\n" +
+            "    }\n\n";
+    private String resultTemplate = "\tResult[int2((xPos$) * xMult, (yPos#) * yMult)] = color;";
 
     private String name;
     private String patternString;

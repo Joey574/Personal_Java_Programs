@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="more debugging needs to be done">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="debugging done I think">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698873584973</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="debugging done I think">
+      <option name="closed" value="true" />
+      <created>1698875452767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698875452767</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,7 +167,8 @@
     <MESSAGE value="fixed bug, check for len == -1" />
     <MESSAGE value="fixed another bug, mathf.max" />
     <MESSAGE value="more debugging needs to be done" />
-    <option name="LAST_COMMIT_MESSAGE" value="more debugging needs to be done" />
+    <MESSAGE value="debugging done I think" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging done I think" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
