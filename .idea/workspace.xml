@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="debug up/down left/right">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryTreeSearch/BinaryTreeSearch.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/InOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/PostOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/PreOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KiansMastermindSolver/KiansMastermindSolver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KiansMastermindSolver/src/MastermindRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KiansMastermindSolver/src/MastermindSolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultithreadingTesting/MultithreadingTesting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultithreadingTesting/src/threadClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/Playground.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Playground/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +62,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/joeys/IdeaProjects/Personal_Java_Programs/Game of Life Shader Automation/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "onboarding.tips.debug.path": "C:/Users/joeys/IdeaProjects/Personal_Java_Programs/BinaryTreeSearch/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -170,10 +186,19 @@
       <option name="project" value="LOCAL" />
       <updated>1698955364448</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="debug up/down left/right">
+      <option name="closed" value="true" />
+      <created>1698956483054</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698956483054</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
     <MESSAGE value="automated file creation is working, just need to check for naming issues and fix them" />
     <MESSAGE value="multi threaded automation cause why not" />

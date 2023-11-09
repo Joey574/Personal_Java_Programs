@@ -1,4 +1,6 @@
 import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -53,6 +55,7 @@ public class Main {
 
         ArrayList<Thread> threads = new ArrayList<>();
 
+
         for (int i = 0; i < MAX_THREADS; i++) {
             FileThread t = new FileThread();
             t.start();
@@ -63,5 +66,6 @@ public class Main {
         for (int i = 0; i < MAX_THREADS; i++) {
             threads.get(i).join();
         }
+
     }
 }

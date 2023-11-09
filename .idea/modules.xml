@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinaryTreeSearch/BinaryTreeSearch.iml" filepath="$PROJECT_DIR$/BinaryTreeSearch/BinaryTreeSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Game of Life Shader Automation/Game of Life Shader Automation.iml" filepath="$PROJECT_DIR$/Game of Life Shader Automation/Game of Life Shader Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KiansMastermindSolver/KiansMastermindSolver.iml" filepath="$PROJECT_DIR$/KiansMastermindSolver/KiansMastermindSolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultithreadingTesting/MultithreadingTesting.iml" filepath="$PROJECT_DIR$/MultithreadingTesting/MultithreadingTesting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Personal_Java_Programs.iml" filepath="$PROJECT_DIR$/Personal_Java_Programs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Playground/Playground.iml" filepath="$PROJECT_DIR$/Playground/Playground.iml" />
     </modules>
   </component>
 </project>
