@@ -68,4 +68,38 @@ public class PostOrder {
 
         return out;
     }
+
+    public void map() {
+        int loc = 0;
+
+        try {
+            if (left.get(loc) != null) {
+                map(left.get(loc));
+            }
+            if (right.get(loc) != null) {
+               map(right.get(loc));
+            }
+
+            System.out.println(data.get(loc));
+
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    private void map(int loc) {
+        try {
+            if (left.get(loc) != null) {
+                map(left.get(loc));
+            }
+            if (right.get(loc) != null) {
+                map(right.get(loc));
+            }
+
+            System.out.println(data.get(loc));
+
+        } catch(Exception e) {
+            System.out.println(e);
+        }
+    }
 }
