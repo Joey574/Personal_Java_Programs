@@ -80,7 +80,7 @@ public class PostOrder {
                map(right.get(loc));
             }
 
-            System.out.println(data.get(loc));
+            System.out.print(data.get(loc) + " ");
 
         } catch(Exception e) {
             System.out.println(e);
@@ -96,7 +96,7 @@ public class PostOrder {
                 map(right.get(loc));
             }
 
-            System.out.println(data.get(loc));
+            System.out.print(data.get(loc) + " ");
 
         } catch(Exception e) {
             System.out.println(e);

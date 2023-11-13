@@ -69,7 +69,7 @@ public class PreOrder {
         int loc = 0;
 
         try {
-            System.out.println(data.get(loc));
+            System.out.print(data.get(loc) + " ");
 
             if (left.get(loc) != null) {
                 map(left.get(loc));
@@ -84,7 +84,7 @@ public class PreOrder {
 
     private void map(int loc) {
         try {
-            System.out.println(data.get(loc));
+            System.out.print(data.get(loc) + " ");
 
             if (left.get(loc) != null) {
                 map(left.get(loc));

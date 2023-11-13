@@ -70,7 +70,9 @@ public class InOrder {
             if (left.get(loc) != null) {
                 map(left.get(loc));
             }
-            System.out.println(data.get(loc));
+
+            System.out.print(data.get(loc) + " ");
+
             if (right.get(loc) != null) {
                 map(right.get(loc));
             }
@@ -84,7 +86,9 @@ public class InOrder {
             if (left.get(loc) != null) {
                 map(left.get(loc));
             }
-            System.out.println(data.get(loc));
+
+            System.out.print(data.get(loc) + " ");
+
             if (right.get(loc) != null) {
                 map(right.get(loc));
             }
