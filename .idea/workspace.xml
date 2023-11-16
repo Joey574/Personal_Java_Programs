@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="binary tree traversals complete">
+    <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="Binary tree left and right array created in method and made test class output look nice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTreeSearch/src/InOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/InOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTreeSearch/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTreeSearch/src/PostOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/PostOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTreeSearch/src/PreOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTreeSearch/src/PreOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699893417376</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Binary tree left and right array created in method and made test class output look nice">
+      <option name="closed" value="true" />
+      <created>1699901318918</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699901318918</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,7 +223,8 @@
     <MESSAGE value="debug up/down left/right" />
     <MESSAGE value="working on binary tree traversals" />
     <MESSAGE value="binary tree traversals complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="binary tree traversals complete" />
+    <MESSAGE value="Binary tree left and right array created in method and made test class output look nice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Binary tree left and right array created in method and made test class output look nice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

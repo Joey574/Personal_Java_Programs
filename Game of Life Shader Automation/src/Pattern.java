@@ -95,7 +95,7 @@ public class Pattern {
                     out = out.replace("#", yAdjust);
 
                     finalOut.append(out).append("\n");
-                }
+                } 
                 x += len;
                 len = -1;
             } else if (patternString.charAt(i) == '!') {
