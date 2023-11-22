@@ -29,8 +29,7 @@ public class Main {
 
                         File myObj = new File("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
-                        FileWriter myWriter = null;
-                        myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
+                        FileWriter myWriter = new FileWriter("C:\\Users\\joeys\\Desktop\\Shaders\\" + fileName + ".compute");
 
                         myWriter.write(pattern.initializePattern());
                         myWriter.close();

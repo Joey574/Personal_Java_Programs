@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f16615e4-32a7-416a-9073-070138bda840" name="Changes" comment="stuff">
-      <change afterPath="$PROJECT_DIR$/FileFiller/FileFiller.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileFiller/src/FileCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileFiller/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/SystemSlowdown.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/DiskFiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/GPUFiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/NetworkFiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/RamFiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SystemSlowdown/src/ClutterClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Game of Life Shader Automation/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemSlowdown/src/DiskFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/SystemSlowdown/src/DiskFiller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemSlowdown/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/SystemSlowdown/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemSlowdown/src/RamFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/SystemSlowdown/src/RamFiller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -65,7 +63,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "onboarding.tips.debug.path": "C:/Users/joeys/IdeaProjects/Personal_Java_Programs/SystemSlowdown/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/joeys/IdeaProjects/Personal_Java_Programs/SystemSlowdown/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -223,6 +224,17 @@
     </task>
     <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
