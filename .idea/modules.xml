@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BinaryTreeSearch/BinaryTreeSearch.iml" filepath="$PROJECT_DIR$/BinaryTreeSearch/BinaryTreeSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CopyRLEToFolder/CopyRLEToFolder.iml" filepath="$PROJECT_DIR$/CopyRLEToFolder/CopyRLEToFolder.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileFiller/FileFiller.iml" filepath="$PROJECT_DIR$/FileFiller/FileFiller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Game of Life Shader Automation/Game of Life Shader Automation.iml" filepath="$PROJECT_DIR$/Game of Life Shader Automation/Game of Life Shader Automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/KiansMastermindSolver/KiansMastermindSolver.iml" filepath="$PROJECT_DIR$/KiansMastermindSolver/KiansMastermindSolver.iml" />
