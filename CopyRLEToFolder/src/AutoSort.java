@@ -13,7 +13,7 @@ public class AutoSort {
             t  = temp.substring(temp.indexOf("#C"));
 
             while(t.startsWith("#C")) {
-                if (t.substring(0, t.indexOf("\n")).startsWith("#C https") && !t.substring(0, t.indexOf("\n")).endsWith(".rle")) {
+                if ((t.startsWith("#C https") || t.startsWith("#C www")) && !t.substring(0, t.indexOf("\n")).endsWith(".rle")) {
 
                     URL url = new URL(t.substring(3, t.indexOf("\n")));
 
